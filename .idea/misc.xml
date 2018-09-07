@@ -10,8 +10,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/pom.xml" />
-        <option value="$PROJECT_DIR$/struts1/pom.xml" />
         <option value="$PROJECT_DIR$/struts/pom.xml" />
       </list>
     </option>
