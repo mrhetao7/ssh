@@ -5,8 +5,9 @@ import cap.bean.Admin;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
-import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
+
 import java.util.Map;
+
 public class CheckLoginInterceptor extends AbstractInterceptor {
 
     @Override

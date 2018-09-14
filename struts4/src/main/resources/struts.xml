@@ -8,10 +8,9 @@
             <!-- 添加登录拦截器 -->
             <interceptor name="checkLogin" class="cap.util.CheckLoginInterceptor"/>
             <!-- 添加登录拦截器 -->
-
-            <interceptor-stack name="mystack">    <!--mystack系统设置默认-->
+            <interceptor-stack name="mystack">
                 <interceptor-ref name="defaultStack"/>
-                <interceptor-ref name="checkLogin"/>   <!--拦截器  检查用户名密码-->
+                <interceptor-ref name="checkLogin"/>
             </interceptor-stack>
         </interceptors>
         <!-- 修改默认拦截器 -->
