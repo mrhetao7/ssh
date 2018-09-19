@@ -13,16 +13,16 @@
 </head>
 <body>
 <s:bean name="cap.bean.User" id="u">
-<s:param name="id" value="1">id:</s:param>
-<s:param name="username" value="'cap'">用户名:</s:param>
-<s:param name="password" value="'cap'">密码:</s:param>
+<s:param name="id" value="1"></s:param>
+<s:param name="username" value="'cap'"></s:param>
+<s:param name="password" value="'cap'"></s:param>
 
 </s:bean>
 
 <s:push value="#u">
-<s:property  value="id"/>
-<s:property value="username"/>
-<s:property value="password"/>
+id:<s:property  value="id"/><br>
+用户名:<s:property value="username"/><br>
+密码:<s:property value="password"/>
 </s:push>
 </body>
 </html>
