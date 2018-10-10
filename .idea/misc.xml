@@ -8,7 +8,9 @@
     <file type="web" url="file://$PROJECT_DIR$/struts4" />
     <file type="web" url="file://$PROJECT_DIR$/struts5" />
     <file type="web" url="file://$PROJECT_DIR$/struts6" />
+    <file type="web" url="file://$PROJECT_DIR$/struts7" />
     <file type="web" url="file://$PROJECT_DIR$/struts8" />
+    <file type="web" url="file://$PROJECT_DIR$/struts9" />
     <file type="web" url="file://$PROJECT_DIR$/test" />
     <file type="web" url="file://$PROJECT_DIR$/test1" />
   </component>
@@ -21,6 +23,8 @@
         <option value="$PROJECT_DIR$/struts5/pom.xml" />
         <option value="$PROJECT_DIR$/struts6/pom.xml" />
         <option value="$PROJECT_DIR$/struts8/pom.xml" />
+        <option value="$PROJECT_DIR$/struts7/pom.xml" />
+        <option value="$PROJECT_DIR$/struts9/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
