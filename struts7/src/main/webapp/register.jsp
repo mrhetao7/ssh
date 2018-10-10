@@ -18,7 +18,8 @@
 <s:form action="register" method="POST">
     <s:textfield name="user.name" key="username"/>
     <s:textfield name="user.password" key="password"/>
-    <s:submit key="submit"/>
+    <s:textfield name="user.repassword" key="repassword"/>
+    <s:submit key="提交"/>
 </s:form>
 </body>
 </html>
