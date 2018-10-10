@@ -6,7 +6,7 @@
     <constant name="struts.i18n.encoding" value="utf-8"></constant>
     <package name="default" namespace="/" extends="struts-default">
 
-        <action name="upload" class="cap.action.FileUpload" method="upload">
+        <action name="upload" class="cap.action.FileUploadAction" method="upload">
             <result name="success">/result.jsp</result>
         </action>
 
