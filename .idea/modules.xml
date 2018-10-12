@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring1/spring1.iml" filepath="$PROJECT_DIR$/spring1/spring1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring2/spring2.iml" filepath="$PROJECT_DIR$/spring2/spring2.iml" />
       <module fileurl="file://$PROJECT_DIR$/struts/struts.iml" filepath="$PROJECT_DIR$/struts/struts.iml" />
       <module fileurl="file://$PROJECT_DIR$/struts3/struts3.iml" filepath="$PROJECT_DIR$/struts3/struts3.iml" />
       <module fileurl="file://$PROJECT_DIR$/struts4/struts4.iml" filepath="$PROJECT_DIR$/struts4/struts4.iml" />
@@ -10,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/struts7/struts7.iml" filepath="$PROJECT_DIR$/struts7/struts7.iml" />
       <module fileurl="file://$PROJECT_DIR$/struts8/struts8.iml" filepath="$PROJECT_DIR$/struts8/struts8.iml" />
       <module fileurl="file://$PROJECT_DIR$/struts9/struts9.iml" filepath="$PROJECT_DIR$/struts9/struts9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring1/src/test/test.iml" filepath="$PROJECT_DIR$/spring1/src/test/test.iml" />
     </modules>
   </component>
 </project>
