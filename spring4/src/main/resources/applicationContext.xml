@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="admin" class="cap.bean.Admin">
+        <property name="id" value="1"/>
+        <property name="usernmae" value="admin"/>
+        <property name="password" value="admin"/>
+    </bean>
+    <bean id="admin2" class="cap.bean.Admin">             <!--构造器方法  带构造器方法顺序入参 -->
+        <constructor-arg index="0" value="2"/>
+        <constructor-arg index="1" value="admin2"/>
+        <constructor-arg index="2" value="admin12"/>
+    </bean>
+    <bean id="admin3" class="cap.bean.Admin">                <!--构造器方法  带构造器方法名字入参 -->
+        <constructor-arg name="id" value="3"/>
+        <constructor-arg name="usernmae" value="admin3"/>
+        <constructor-arg name="password" value="admin3"/>
+    </bean>
+
+    <bean id="adminService" class="cap.service.impl.AdminServiceImpl">
+        <property name="admin" ref="admin"/>
+    </bean>
+    <bean id="adminService1" class="cap.service.impl.AdminServiceImpl">
+        <property name="admin">
+            <ref bean="admin"/>
+        </property>
+    </bean>
+    <bean id="adminService2" class="cap.service.impl.AdminServiceImpl">
+        <property name="admin">
+            <bean id="admin" class="cap.bean.Admin">
+                <property name="id" value="1"/>
+                <property name="usernmae" value="admin2"/>
+                <property name="password" value="admin2"/>
+            </bean>
+
+        </property>
+    </bean>
+</beans>
