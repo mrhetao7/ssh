@@ -1,0 +1,28 @@
+package cap.aop;
+
+import net.sf.cglib.proxy.Enhancer;
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
+
+import java.lang.invoke.MethodHandle;
+import java.lang.reflect.Method;
+import java.util.Date;
+
+public class CglibProxy implements MethodInterceptor {
+    private Object targetobject;
+    public Object createProxyObject(Object obj){
+        this.targetobject=obj;
+        Enhancer enhancer = new Enhancer();
+        enhancer.setSuperclass(obj.getClass());
+        enhancer.setCallback(this);
+        Object proxyObj = enhancer.create();
+        return proxyObj;
+
+    }
+    @Override
+    public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
+        System.out.println("当前日期:" + (new Date()).toString());
+        Object obj = method.invoke(targetobject, objects);
+        return obj;
+    }
+}
