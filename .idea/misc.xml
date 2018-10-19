@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/spring2" />
+    <file type="web" url="file://$PROJECT_DIR$/spring3" />
     <file type="web" url="file://$PROJECT_DIR$/spring4" />
     <file type="web" url="file://$PROJECT_DIR$/spring4x1" />
     <file type="web" url="file://$PROJECT_DIR$/spring6" />
