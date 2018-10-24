@@ -5,6 +5,8 @@ import cap.aop.JDKProxy;
 import cap.dao.AdminDAO;
 import cap.dao.impl.AdminDAOImpl;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AdminDAOTest {
     @Test
@@ -28,5 +30,20 @@ public class AdminDAOTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    @Test
+    public void testSayHi3() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        AdminDAO adminDAO = (AdminDAO) context.getBean("logProxy");
+        System.out.println(adminDAO.SayHello());
+
+    }
+
+    @Test
+    public void testSayHi4() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        AdminDAO adminDAO = (AdminDAO) context.getBean("adminDAO");
+        System.out.println(adminDAO.SayHello());
+
     }
 }
