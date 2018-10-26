@@ -11,6 +11,7 @@
         <module name="spring4" />
         <module name="spring4x1" />
         <module name="spring6" />
+        <module name="spring7" />
         <module name="struts3" />
         <module name="struts4" />
         <module name="struts5" />
@@ -27,6 +28,8 @@
       <module name="spring4" target="1.7" />
       <module name="spring4x1" target="1.7" />
       <module name="spring6" target="1.7" />
+      <module name="spring6x1" target="1.7" />
+      <module name="spring7" target="1.7" />
       <module name="struts" target="1.7" />
       <module name="struts1" target="1.7" />
       <module name="struts1 (1)" target="1.5" />
