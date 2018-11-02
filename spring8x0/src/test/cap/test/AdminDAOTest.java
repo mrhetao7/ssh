@@ -46,7 +46,7 @@ public class AdminDAOTest {
     @Test
     public void testUpdateAdmin(){
         AdminDAO adminDAO= (AdminDAO) context.getBean("adminDAO");
-        Admin admin=new Admin(15,"xx","xx");
+        Admin admin=new Admin("xx","xx");
         int res=adminDAO.updateAdmin(admin);
         assert  res==1;
     }
