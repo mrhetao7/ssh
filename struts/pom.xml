@@ -8,7 +8,7 @@
   <artifactId>struts</artifactId>
   <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>struts5</module>
+        <module>struts</module>
     </modules>
     <packaging>pom</packaging>
 
